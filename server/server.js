@@ -39,7 +39,7 @@ app.post('/api/user/login',(req,res)=>{
                 res.cookie('auth',user.token).send('ok')
         })
     })
-    })
+ })
 
 });
 app.get('/user/profile',auth,(req,res)=>{
